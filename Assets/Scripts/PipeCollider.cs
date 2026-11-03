@@ -21,6 +21,7 @@ public class PipeCollider : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             gm.GetComponent<GameManager>().StopGame();
+            
         }
     }
 }

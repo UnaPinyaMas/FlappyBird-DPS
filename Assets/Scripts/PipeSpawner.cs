@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 public class PipeSpawner : MonoBehaviour
 {
-    public float timeToSpawn = 3;
+    public float timeToSpawn = 20;
     public GameObject pipePrefab;
     public Transform spawnTop;
     public Transform spawnBottom;

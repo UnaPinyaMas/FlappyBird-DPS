@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject pipeSpawner;
     public TextMeshProUGUI  scoreText;
+    public GameObject player;
     void Start()
     {
         gameOverPanel.SetActive(false);
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
             Destroy(pip.GetComponent<Pipe>());
         }
         Destroy(pipeSpawner.GetComponent<PipeSpawner>());
+        player.GetComponent<Animator>().SetTrigger("Hitted");
     }
 
     public void RestartGame()
